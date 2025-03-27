@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Mathematics</title>
+    <link rel="stylesheet" href="basic_mathematics.css">
+    <!-- Add Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <img src="/child1.jpg" alt="Logo" class="logo">
+        </div>
+    </div>
+
+    <!-- Arithmetic Section -->
+    <section class="Arithmetic sec">
+        <h2>Arithmetic</h2>
+        <ul>
+            <li>Addition(+)
+                <!--related informations-->
+                <p>Adding two or more numbers together to find a total.Ex- 7+7=14 </p>
+            </li>
+            <li>Subtraction(-)
+                <!--related informations-->
+                <P>Reducing one number from another or taking away one from another number. Ex- 7-7=0 , 7-1=6</P>
+
+            </li>
+            <li>Multiplication(x)
+                <!--related informations-->
+                <p> Repeated addition of the same number.Ex-3x4=12 , 6x9=54 </p>
+
+            </li>
+            <li>Division(÷)
+                <!--related informations-->
+                <p>Repeated Subtraction of the same number or spilitting a number intwo equal parts . Ex-12÷3=4 , 44÷4=11.</p>
+
+            </li>
+            <li>Fraction
+                <!--related informations--></li>
+                <p>A fraction is a way of representing a part of a whole or a ratio between two numbers. It consists of two parts:
+
+                    Numerator: The top number, which represents the number of parts you have or are considering.
+                    Denominator: The bottom number, which represents the total number of equal parts in the whole.
+                    Fraction
+                    =
+                    Numerator/
+                    Denominator
+                    </p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                      <mn>4</mn>
+                      <mn>3</mn>
+                    </mfrac>
+                    <mn>,</mn>
+                    <mfrac>
+                        <mn>9</mn>
+                        <mn>3</mn>
+                      </mfrac>
+                      <mn>, </mn>
+                      <mfrac>
+                        <mn>0</mn>
+                        <mn>3</mn>
+                      </mfrac>
+                      
+                  </math>
+
+                  <p>Example given is not called a fraction </p><math><mfrac>
+                    <mn>10</mn>
+                    <mn>0</mn>
+                  </mfrac></math>
+                  
+            </p>
+            <li>Decimal
+                <!--related informations-->
+
+            </li>
+            <li>Expression
+                <!--related informations-->
+
+            </li>
+            <li>Ratio and Proportion
+                <!--related informations-->
+
+            </li>
+            <li>Profit and Loss
+                <!--related informations-->
+
+            </li>
+            <li>Pythagoras
+                <!--related informations-->
+
+            </li>
+        </ul>
+    </section>
+
+    <!-- Shapes Section -->
+    <section class="Shapes sec">
+        <h2>Shapes</h2>
+        <ul>One-Dimensional Shapes
+            <li>Line Segment
+                <!--related informations-->
+
+            </li>
+            <li>Ray
+                <!--related informations-->
+
+            </li>
+            <li>Line
+                <!--related informations-->
+
+            </li>
+            <li>Curve
+                <!--related informations-->
+
+            </li>
+            <li>Number Line
+                <!--related informations-->
+
+            </li>
+            <li>Geometric Representation of 1D
+                <!--related informations-->
+
+            </li>
+        </ul>
+        <ul>Two-Dimensional (2D) Shapes</ul>
+        <ul>Three-Dimensional (3D) Shapes</ul>
+        <ul>Other Key Concepts in Shapes</ul>
+    </section>
+
+    <!-- Graphs Section -->
+    <section class="Graphs sec">
+        <h2>Graphs</h2>
+        <ul>
+            <li>Graphs for Data Representation
+                <!--related informations-->
+                
+
+            </li>
+            <li>Graphs for Functions
+                <!--related informations-->
+
+            </li>
+            <li>Specialized Graphs
+                <!--related informations-->
+
+            </li>
+        </ul>
+
+        <!-- Graph Display -->
+        <div>
+            <h3>Example: Bar Graph for Monthly Sales</h3>
+            <canvas id="myChart" width=".9" height=".10"></canvas>
+        </div>
+    </section>
+
+    <!-- Chart.js Script to Create the Graph -->
+    <script>
+        // Select the canvas element
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        // Create the graph
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Graph type: 'line', 'bar', 'pie', etc.
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'], // X-axis labels
+                datasets: [{
+                    label: 'Monthly Sales (in USD)',
+                    data: [1200, 1900, 3000, 500, 2200], // Data points
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: { enabled: true }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true // Start Y-axis from zero
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

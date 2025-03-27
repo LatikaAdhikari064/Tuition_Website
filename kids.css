@@ -1,0 +1,96 @@
+.nav {
+    width: 100%;
+    background: rgba(200, 240, 22, 0.8); /* Semi-transparent black */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    padding: 10px 0;
+    color: black;
+  }
+  
+  /* Left Side (Links) */
+  .nav-left ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-left ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-left ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-left ul li a:hover {
+    color: #FFD700; /* Golden effect on hover */
+  }
+  
+  /* Right Side (Logo) */
+  .nav-right .logo {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav-left ul {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .nav-left ul li {
+        margin: 10px 0;
+    }
+  
+    .nav-right {
+        margin-top: 10px;
+    }
+  }
+
+  /*page 1*/
+  .page1{
+    height: 420px;
+   background-image: url('https://img.freepik.com/premium-photo/vector-kids-reading-illustration_575980-26581.jpg');
+  }
+  h1{
+    text-align: center;
+    font-size: 60px;
+    font-family:Papyrus;
+  }
+  .varnmala{
+    font-size: 40px;
+    margin: 100px;
+  }
+  .varnmala_img{
+    background-image: url(https://bsebresult.in/wp-content/uploads/2021/05/Ka-Kha-Ga-Gha-In-Hindi-981x1024.jpg);
+    height:1000px;
+    width:1000px;
+    align-items: center;
+    box-shadow: 2px 10px 12px black;
+    
+  }

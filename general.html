@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar with Content</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <section class="nav">
+        <!--Navbar making -->
+        <div class="navbar">
+            <div class="nav-left">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="nav-right">
+              <img src="web1.png" alt="Logo" class="logo">
+            </div>
+          </div>
+    </section>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>Topics</h2>
+        <ul>
+            <li><a href="#" onclick="showContent('htmlfile1.html')">Parts of Speech
+                <li><a href="#">Nouns</a></li>
+                <li><a href="#">Pronouns</a></li>
+                <li><a href="#">Verbs</a></li>
+                <li><a href="#">Adjective</a></li>
+                <li><a href="#">Preposition</a></li>
+                <li><a href="#">Adverbs</a></li>
+                <li><a href="#">Conjunctions</a></li>
+                <li><a href="#">Interjections</a></li>
+            </a></li>
+            <li><a href="#" onclick="showContent('htmlfile2.html')">Tenses</a></li>
+            <li><a href="#" onclick="showContent('htmlfile3.html')">Sentence Structure</a></li>
+            <li><a href="#" onclick="showContent('htmlfile4.html')">Articles (A, An, The)</a></li>
+            <li><a href="#" onclick="showContent('htmlfile1.html')">Punctuation</a></li>
+            <li><a href="#" onclick="showContent('htmlfile2.html')">Active & Passive Voice</a></li>
+            <li><a href="#" onclick="showContent('htmlfile3.html')">Direct & Indirect Speech</a></li>
+            <li><a href="#" onclick="showContent('htmlfile4.html')">Modals (Can, Could, May, Might, Should, Must, etc.)</a></li>
+            <li><a href="#" onclick="showContent('htmlfile4.html')">Clauses (Noun Clause, Adjective Clause, Adverb Clause)</a></li>
+
+        
+        </ul>
+    </div>
+    <div class="content">
+        <div id="content-area">
+            <h2>Welcome!</h2>
+            <p>Select a topic from the sidebar.</p>
+        </div>
+    </div>
+    
+
+    <!-- Hamburger Menu (for Mobile) -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        <i class="fas fa-bars">=</i>
+    </button>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div id="topic1" class="topic">
+            <h2>Grammar & Syntax</h2>
+            <p>Learn about tenses, sentence structure, active/passive voice, and more.</p>
+        </div>
+        <div id="topic2" class="topic" style="display: none;">
+            <h2>Vocabulary & Word Usage</h2>
+            <p>Expand your vocabulary with idioms, synonyms, and collocations.</p>
+        </div>
+        <div id="topic3" class="topic" style="display: none;">
+            <h2>Reading & Comprehension</h2>
+            <p>Improve your reading speed, inference skills, and understanding of texts.</p>
+        </div>
+        <div id="topic4" class="topic" style="display: none;">
+            <h2>Writing & Composition</h2>
+            <p>Master paragraph writing, essays, letters, and creative writing.</p>
+        </div>
+    </div>
+
+    <script src="general.js"></script>
+</body>
+</html>
